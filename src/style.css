@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme{
+    --font-mrs-saint: font-[Mrs_Saint_Delafield];
+    --font-tenor-sans: font-[Tenor_Sans];
+}

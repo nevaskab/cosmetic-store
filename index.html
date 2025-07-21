@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Cosméticos</title>
+    <link rel="shortcut icon" type="imagex/svg" href="./src/assets/icons/basket.svg">
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Montserrat:wght@700&amp;family=Mrs+Saint+Delafield&amp;family=Tenor+Sans&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--Banner e Header-->
+    <section class="bg-[url(/src/assets/imgs/main-bg.jpg)] bg-cover min-h-[100vh] bg-no-repeat bg-position-[47%_center]">
+      <div id="header" class="sticky top-0 z-50 w-full bg-transparent transition-colors duration-500 p-5 shadow-md items-center flex justify-between box-border">
+        <header class="font-[Mrs_Saint_Delafield] text-[30px]">
+          Loja de Cosméticos
+        </header>
+
+        <div class="flex flex-col gap-[3px] w-6 cursor-pointer h-[15px]">
+          <span class="block border-none w-[22px] h-1 bg-black"></span>
+          <span class="block border-none w-[22px] h-1 bg-black"></span>
+          <span class="block border-none w-[22px] h-1 bg-black"></span>
+        </div>
+      </div>
+
+      <div class="flex justify-center flex-col px-[10px] py-[80px] max-w-2x1 mx-auto">
+        <h2 class="font-[Mrs_Saint_Delafield] text-[45px] text-[#d05278] px-[10px] py-[10px]">
+          Profissional
+        </h2>
+        <h1 class="text-tenor-sans text-[58px] text-[#222222] px-[10px] py-[10px]">
+          Beleza & Cuidado
+        </h1>
+        <p class="text-tenor-sans text-[16px] text-black px-[10px] py-[50px] ">
+          Cuide da sua pele com cosméticos livres de toxinas. Com ofertas que você não vai recusar.
+        </p>
+        <a href="#" class="bg-[#222222] h-[60px] w-fit inline-block px-[50px] text-white uppercase font-bold text-[14px]/[59px]">
+          Compre agora
+        </a>
+      </div>
+    </section>
+
+    <!--Produtos-->
+    <section class="bg-[#faf9ff] py-12 md:py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="font-mrs-saint text-[45px]">
+          Cosméticos
+        </h3>
+
+        <h2 class="text-tenor-sans font-bold text-[40px] text-gray-800 mb-2">
+          Produtos em Destaque
+        </h2>
+
+        <p class="text-tenor-sans text-[16px] text-center text-gray-500 mb-10">
+          Confira as últimas tendências em nossa loja.
+        </p>
+
+        <nav id="category-nav" class="flex justify-center items-center gap-2 md:gap-4 mb-12 flex-wrap">
+          <button data-filter="todos" class="category-button active px-5 py-2 rounded-md text-sm font-medium transition-all duration-300">Todos</button>
+          <button data-filter="maquiagem" class="category-button px-5 py-2 rounded-md text-sm font-medium transition-all duration-300">Maquiagem</button>
+          <button data-filter="spa" class="category-button px-5 py-2 rounded-md text-sm font-medium transition-all duration-300">SPA</button>
+          <button data-filter="haircare" class="category-button px-5 py-2 rounded-md text-sm font-medium transition-all duration-300">Cabelo</button>
+          <button data-filter="skincare" class="category-button px-5 py-2 rounded-md text-sm font-medium transition-all duration-300">Skin Care</button>
+        </nav>
+
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+          <div class="product-card" data-category="maquiagem">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div class="relative bg-gray-50 flex items-center justify-center p-4 h-72">
+                <img src="src/assets/imgs/product-make1.jpg" alt="Produto de Maquiagem" class="max-h-full w-auto object-contain transition-transform duration-300 group-hover:scale-110">
+                <div class="absolute inset-0 group hover:bg-[#0000003f] transition-all duration-300 flex justify-start items-end">
+                  <button class="p-4 h-fit group-hover:bg-white rounded-full transition-all duration-300 m-[5px]">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/heart-outline.svg">
+                  </button>
+                  <a class="p-4 h-fit group-hover:bg-[#d05278] rounded-full transition-all duration-300 m-[5px]" href="#">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/basket.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="p-5 text-center">
+                <h3 class="font-semibold text-gray-800 text-lg">Base Líquida</h3>
+                <p class="mt-2 text-lg font-bold text-[#d05278]">R$80,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="spa">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div class="relative bg-gray-50 flex items-center justify-center p-4 h-72">
+                <img src="src/assets/imgs/product-spa1.jpg" alt="Produto de SPA" class="max-h-full w-auto object-contain">
+                <div class="absolute inset-0 group hover:bg-[#0000003f] transition-all duration-300 flex justify-start items-end">
+                  <button class="p-4 h-fit group-hover:bg-white rounded-full transition-all duration-300 m-[5px]">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/heart-outline.svg">
+                  </button>
+                  <a class="p-4 h-fit group-hover:bg-[#d05278] rounded-full transition-all duration-300 m-[5px]" href="#">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/basket.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="p-5 text-center">
+                <h3 class="font-semibold text-gray-800 text-lg">Óleo Corporal</h3>
+                <p class="mt-2 text-lg font-bold text-[#d05278]">R$89,90</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="skincare">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div class="relative bg-gray-50 flex items-center justify-center p-4 h-72">
+                <img src="src/assets/imgs/product-skin1.jpg" alt="Produto de SPA" class="max-h-full w-auto object-contain">
+                <div class="absolute inset-0 group hover:bg-[#0000003f] transition-all duration-300 flex justify-start items-end">
+                  <button class="p-4 h-fit group-hover:bg-white rounded-full transition-all duration-300 m-[5px]">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/heart-outline.svg">
+                  </button>
+                  <a class="p-4 h-fit group-hover:bg-[#d05278] rounded-full transition-all duration-300 m-[5px]" href="#">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/basket.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="p-5 text-center">
+                <h3 class="font-semibold text-gray-800 text-lg">Sabonete Facial</h3>
+                <p class="mt-2 text-lg"><span class="text-gray-400 line-through mr-2">R$50,00</span><span class="font-bold text-[#d05278]">$40,00</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="skincare">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div class="relative bg-gray-50 flex items-center justify-center p-4 h-72">
+                <img src="src/assets/imgs/product-skin2.jpg" alt="Produto de SPA" class="max-h-full w-auto object-contain">
+                <div class="absolute inset-0 group hover:bg-[#0000003f] transition-all duration-300 flex justify-start items-end">
+                  <button class="p-4 h-fit group-hover:bg-white rounded-full transition-all duration-300 m-[5px]">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/heart-outline.svg">
+                  </button>
+                  <a class="p-4 h-fit group-hover:bg-[#d05278] rounded-full transition-all duration-300 m-[5px]" href="#">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/basket.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="p-5 text-center">
+                <h3 class="font-semibold text-gray-800 text-lg">Hidratante Facial</h3>
+                <p class="mt-2 text-lg font-bold text-[#d05278]">R$100,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="haircare">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div class="relative bg-gray-50 flex items-center justify-center p-4 h-72">
+                <img src="src/assets/imgs/product-hair1.jpg" alt="Produto de SPA" class="max-h-full w-auto object-contain">
+                <div class="absolute inset-0 group hover:bg-[#0000003f] transition-all duration-300 flex justify-start items-end">
+                  <button class="p-4 h-fit group-hover:bg-white rounded-full transition-all duration-300 m-[5px]">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/heart-outline.svg">
+                  </button>
+                  <a class="p-4 h-fit group-hover:bg-[#d05278] rounded-full transition-all duration-300 m-[5px]" href="#">
+                    <img class="w-6 h-6 hidden group-hover:block" src="src/assets/icons/basket.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="p-5 text-center">
+                <h3 class="font-semibold text-gray-800 text-lg">Hidratante Capilar</h3>
+                <p class="mt-2 text-lg font-bold text-[#d05278]">R$105,90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[EAEAEA]">
+      <div></div>
+    </section>
+    <div id="app"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
