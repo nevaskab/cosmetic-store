@@ -6,6 +6,7 @@
     <title>Loja de Cosméticos</title>
     <link rel="shortcut icon" type="imagex/svg" href="./src/assets/icons/basket.svg">
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
@@ -13,10 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Montserrat:wght@700&amp;family=Mrs+Saint+Delafield&amp;family=Tenor+Sans&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-
-    <!--Banner e Header-->
-    <section class="bg-[url(/src/assets/imgs/main-bg.jpg)] bg-cover min-h-[100vh] bg-no-repeat bg-position-[47%_center]">
-      <div id="header" class="sticky top-0 z-50 w-full bg-transparent transition-colors duration-500 p-5 shadow-md items-center flex justify-between box-border">
+    <!--Header-->
+    <div id="header" class="fixed top-0 z-50 w-full bg-transparent transition-colors duration-500 p-5 shadow-md items-center flex justify-between box-border">
         <header class="font-[Mrs_Saint_Delafield] text-[30px]">
           Loja de Cosméticos
         </header>
@@ -28,14 +27,17 @@
         </div>
       </div>
 
-      <div class="flex justify-center flex-col px-[10px] py-[80px] max-w-2x1 mx-auto">
+    <!--Banner-->
+    <section class="bg-[url(/src/assets/imgs/main-bg.jpg)] bg-cover min-h-[100vh] bg-no-repeat bg-position-[47%_center]">
+
+      <div class="flex justify-center flex-col px-[50px] py-[200px] max-w-2x1 mx-auto">
         <h2 class="font-[Mrs_Saint_Delafield] text-[45px] text-[#d05278] px-[10px] py-[10px]">
           Profissional
         </h2>
-        <h1 class="text-tenor-sans text-[58px] text-[#222222] px-[10px] py-[10px]">
+        <h1 class="font-[Tenor_Sans] text-[58px] text-[#222222] px-[10px] py-[10px]">
           Beleza & Cuidado
         </h1>
-        <p class="text-tenor-sans text-[16px] text-black px-[10px] py-[50px] ">
+        <p class="font-[Tenor_Sans] text-[16px] text-black px-[10px] py-[50px] ">
           Cuide da sua pele com cosméticos livres de toxinas. Com ofertas que você não vai recusar.
         </p>
         <a href="#" class="bg-[#222222] h-[60px] w-fit inline-block px-[50px] text-white uppercase font-bold text-[14px]/[59px]">
@@ -47,15 +49,15 @@
     <!--Produtos-->
     <section class="bg-[#faf9ff] py-12 md:py-16">
       <div class="container mx-auto px-4 text-center">
-        <h3 class="font-mrs-saint text-[45px]">
+        <h3 class="font-[Mrs_Saint_Delafield] text-[60px] text-[#d05278]">
           Cosméticos
         </h3>
 
-        <h2 class="text-tenor-sans font-bold text-[40px] text-gray-800 mb-2">
+        <h2 class="font-[Tenor_Sans] font-bold text-[40px] text-gray-800 mb-2">
           Produtos em Destaque
         </h2>
 
-        <p class="text-tenor-sans text-[16px] text-center text-gray-500 mb-10">
+        <p class="font-[Tenor_Sans] text-[16px] text-center text-gray-500 mb-10">
           Confira as últimas tendências em nossa loja.
         </p>
 
@@ -172,10 +174,67 @@
       </div>
     </section>
 
-    <section class="bg-[EAEAEA]">
-      <div></div>
+    <!--Carrossel-->
+    <section class="bg-[EAEAEA] py-5 md:py-7">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="font-[Mrs_Saint_Delafield] text-4xl md:text-[60px] text-[#d05278]">
+          Encontre seu cosmético aqui
+        </h3>
+        <h2 class="font-[Tenor_Sans] font-bold text-[15px] md:text-[20px] text-gray-800 mb-2">
+          @loja_cosmeticos
+        </h2>
+      </div>
+
+      <div class="swiper coverflow-swiper mt-8">
+        <div class="swiper-wrapper">
+          <!--Slide do carrossel-->
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/hair care products.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/skin product - hand.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/skin products.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/serum-hands-img.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/skin-products-swiper.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/hand-exfoliant.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/white-products-swiper.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/cosmetics-prod-swiper.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/imgs/two-products-swiper.jpg">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </section>
+
+    <section>
+      <footer class="block w-full bg-[#222222] py-[10px] px-[10px]">
+        <div class="font-[Tenor_Sans] font-bold text-[20px] text-[white] py-[10px]">Contact</div>
+        <ion-icon name="call"></ion-icon>
+        <div class="inline text-[white] font-semibold">: +55 (12) 3456-7890</div>
+        <div class="flex justify-center text-[white] text-[12px] underline py-[5px]">Termos de Políticas e Privacidade</div>
+      </footer>
+    </section>
+
     <div id="app"></div>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
