@@ -1,3 +1,5 @@
+import './src/style.css';
+
 document.addEventListener('DOMContentLoaded', () =>{
     const nav = document.getElementById('category-nav');
     const buttons = nav.querySelectorAll('.category-button');
@@ -10,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () =>{
     window.addEventListener('scroll', () =>{
         if(window.scrollY > 5){
             header.classList.remove('bg-transparent');
-            header.classList.add('bg-[#fcedeae6]');
+            header.classList.add('bg-[#fcedeae6]', 'backdrop-blur-lg');
         }
         else{
             header.classList.add('bg-transparent');
-            header.classList.remove('bg-[#fcedeae6]');
+            header.classList.remove('bg-[#fcedeae6]', 'backdrop-blur-lg');
         }
     });
 
@@ -65,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
+        initialSlide: 4,
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
