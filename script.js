@@ -1,4 +1,4 @@
-import './src/style.css';
+import './style.css';
 
 document.addEventListener('DOMContentLoaded', () =>{
     const nav = document.getElementById('category-nav');
