@@ -1,13 +1,14 @@
 <h1 align=center>Projeto de Loja de Cosméticos feito em Tailwind e Javascript</h1>
-O foco principal da realização desse projeto é o aprendizado voltado para desenvolvimento web e do framework Tailwind CSS.
-
-<h2>Área em construçao ⚠️🚧</h2>
-Tenha cuidado! A construção ainda não foi finalizada.
+O foco principal da realização desse projeto é o aprendizado voltado para desenvolvimento web e do framework Tailwind CSS com o auxílio da ferramenta Vite.
 
 ## Apresentação do projeto 🌸
 ![Gravação de Tela 2025-07-21 112910](https://github.com/user-attachments/assets/ef37e4c1-c351-41d0-bf57-4fe980da9482)
 
 O design escolhido como objeto de estudo e modelo se encontra [nesse link](https://george-fx.github.io/beshop-web/index.html#) e utilizando como apoio a documentação do framework [Tailwind CSS v4.1](https://tailwindcss.com).
+
+### Acesso 🩷✨
+
+Venha conhecer meu primeiro projeto [clicando aqui](https://cosmetic-store-one.vercel.app)!!
 
 ### Autor
 ---
